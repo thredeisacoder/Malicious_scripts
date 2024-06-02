@@ -1,4 +1,4 @@
-# Tên Repository
+# Sec_scripts
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
