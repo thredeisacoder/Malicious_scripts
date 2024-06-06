@@ -1,5 +1,5 @@
 # Sec_scripts
-
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ## Mô tả
 
 Sec_scripts là một tập hợp các đoạn mã liên quan đến an toàn thông tin, bao gồm keylogger, malware, rootkit, webshell backdoor, và nhiều hơn nữa. Mục đích của dự án này là cung cấp các công cụ nghiên cứu và thử nghiệm bảo mật.
@@ -10,7 +10,6 @@ Sec_scripts là một tập hợp các đoạn mã liên quan đến an toàn th
 - [Yêu cầu hệ thống](#yêu-cầu-hệ-thống)
 - [Cài đặt](#cài-đặt)
 - [Hướng dẫn sử dụng](#hướng-dẫn-sử-dụng)
-- [Ví dụ](#ví-dụ)
 - [Đóng góp](#đóng-góp)
 - [Giấy phép](#giấy-phép)
 - [Liên hệ](#liên-hệ)
@@ -55,10 +54,6 @@ Dự án này bao gồm các công cụ và mã nguồn để thử nghiệm cá
 
 Chi tiết về cách sử dụng từng công cụ và script được cung cấp trong thư mục tương ứng.
 
-## Ví dụ
-
-Ví dụ về cách chạy và sử dụng các script được cung cấp trong thư mục `examples`.
-
 ## Đóng góp
 
 Nếu bạn muốn đóng góp vào dự án này, vui lòng fork repository, tạo branch mới và gửi pull request. Mọi đóng góp đều được hoan nghênh!
@@ -69,5 +64,5 @@ Dự án này được cấp phép dưới giấy phép MIT. Xem chi tiết tron
 
 ## Liên hệ
 
-Nếu có bất kỳ câu hỏi hoặc đề xuất, vui lòng liên hệ qua email: [thredeisacoder@example.com](mailto:thredeisacoder@example.com).
+Nếu có bất kỳ câu hỏi hoặc đề xuất, vui lòng liên hệ qua email: [anphmvn75@gmail.com](mailto:anphmvn75@gmail.com).
 
