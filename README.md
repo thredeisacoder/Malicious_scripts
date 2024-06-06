@@ -1,37 +1,37 @@
 # Malicious_scripts
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-## Mô tả
+## Description
 
-Sec_scripts là một tập hợp các đoạn mã liên quan đến an toàn thông tin, bao gồm keylogger, malware, rootkit, webshell backdoor, và nhiều hơn nữa. Mục đích của dự án này là cung cấp các công cụ nghiên cứu và thử nghiệm bảo mật.
+Malicious_scripts is a collection of scripts related to information security, including keyloggers, malware, rootkits, webshell backdoors, and more. The purpose of this project is to provide tools for security research and testing.
 
-## Mục lục
+## Table of Contents
 
-- [Giới thiệu](#giới-thiệu)
-- [Yêu cầu hệ thống](#yêu-cầu-hệ-thống)
-- [Cài đặt](#cài-đặt)
-- [Hướng dẫn sử dụng](#hướng-dẫn-sử-dụng)
-- [Đóng góp](#đóng-góp)
-- [Giấy phép](#giấy-phép)
-- [Liên hệ](#liên-hệ)
+- [Introduction](#Introduction)
+- [System Requirements](#System-Requirements)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributing](#Contributing)
+- [License](#License)
+- [Contact](#Contact)
 
-## Giới thiệu
+## Introduction
 
-Dự án này bao gồm các công cụ và mã nguồn để thử nghiệm các lỗ hổng bảo mật và phát triển các phương pháp bảo vệ. Các thành phần chính bao gồm:
+This project includes tools and source code for testing security vulnerabilities and developing protection methods. The main components include:
 
-- **Keylogger**: Ghi lại các thao tác bàn phím.
-- **Malware**: Mã độc dùng để nghiên cứu và phân tích.
-- **Rootkit**: Công cụ ẩn mình và kiểm soát hệ thống.
-- **Webshell Backdoor**: Truy cập trái phép vào máy chủ web.
+- **Keylogger**: Records keyboard actions.
+- **Malware**: Malicious code for research and analysis.
+- **Rootkit**: Tools for hiding and controlling the system.
+- **Webshell Backdoor**: Unauthorized access to a web server.
 
-## Yêu cầu hệ thống
+## System Requirements
 
-- **Hệ điều hành**: Windows/Linux/macOS
-- **Phiên bản Python**: >= 3.8
-- **Các thư viện phụ thuộc**: Liệt kê trong file `requirements.txt`
+- **Operating System**: Windows/Linux/macOS
+- **Python Version**: >= 3.8
+- **Dependencies**: Listed in the `requirements.txt`
 
-## Cài đặt
+## Installation
 
-Để cài đặt dự án này, bạn cần thực hiện các bước sau:
+To install this project, follow these steps:
 
 1. Clone repository:
     ```sh
@@ -39,30 +39,29 @@ Dự án này bao gồm các công cụ và mã nguồn để thử nghiệm cá
     cd Malicious_scripts
     ```
 
-2. Tạo và kích hoạt virtual environment:
+2. Create and activate a virtual environment:
     ```sh
     python -m venv venv
-    source venv/bin/activate  # Trên Windows sử dụng `venv\Scripts\activate`
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
 
-3. Cài đặt các thư viện phụ thuộc:
+3. Install the dependencies:
     ```sh
     pip install -r requirements.txt
     ```
 
-## Hướng dẫn sử dụng
+## Usage
 
-Chi tiết về cách sử dụng từng công cụ và script được cung cấp trong thư mục tương ứng.
+Details on how to use each tool and script are provided in the corresponding directory.
 
-## Đóng góp
+## Contributing
 
-Nếu bạn muốn đóng góp vào dự án này, vui lòng fork repository, tạo branch mới và gửi pull request. Mọi đóng góp đều được hoan nghênh!
+If you want to contribute to this project, please fork the repository, create a new branch, and submit a pull request. All contributions are welcome!
 
-## Giấy phép
+## License
 
-Dự án này được cấp phép dưới giấy phép MIT. Xem chi tiết trong file `LICENSE`.
+This project is licensed under the MIT License. See the 'LICENSE' file for details.
 
-## Liên hệ
+## Contact
 
-Nếu có bất kỳ câu hỏi hoặc đề xuất, vui lòng liên hệ qua email: [anphmvn75@gmail.com](mailto:anphmvn75@gmail.com).
-
+If you have any questions or suggestions, please contact via email: [anphmvn75@gmail.com](mailto:anphmvn75@gmail.com).
