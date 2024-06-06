@@ -1,3 +1,6 @@
+#Author: Threde
+#Github: https://github.com/thredeisacoder
+
 import os
 import logging
 import subprocess
