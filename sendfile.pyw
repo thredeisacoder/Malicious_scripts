@@ -27,5 +27,5 @@ try:
 except Exception as e:
     print('Có lỗi xảy ra:', str(e))
 
-# Shutdown cmd
+# Shutdown cmd 
 os.system("taskkill /f /im cmd.exe")
