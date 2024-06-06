@@ -1,10 +1,8 @@
 # Sec_scripts
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
 ## Mô tả
 
-Mô tả ngắn gọn về dự án của bạn. Bạn có thể nêu mục đích của dự án, các vấn đề mà nó giải quyết và những tính năng chính.
+Sec_scripts là một tập hợp các đoạn mã liên quan đến an toàn thông tin, bao gồm keylogger, malware, rootkit, webshell backdoor, và nhiều hơn nữa. Mục đích của dự án này là cung cấp các công cụ nghiên cứu và thử nghiệm bảo mật.
 
 ## Mục lục
 
@@ -19,28 +17,57 @@ Mô tả ngắn gọn về dự án của bạn. Bạn có thể nêu mục đí
 
 ## Giới thiệu
 
-Giới thiệu chi tiết hơn về dự án, nêu rõ hơn về các chức năng, kiến trúc và các thành phần chính của mã nguồn. 
+Dự án này bao gồm các công cụ và mã nguồn để thử nghiệm các lỗ hổng bảo mật và phát triển các phương pháp bảo vệ. Các thành phần chính bao gồm:
+
+- **Keylogger**: Ghi lại các thao tác bàn phím.
+- **Malware**: Mã độc dùng để nghiên cứu và phân tích.
+- **Rootkit**: Công cụ ẩn mình và kiểm soát hệ thống.
+- **Webshell Backdoor**: Truy cập trái phép vào máy chủ web.
 
 ## Yêu cầu hệ thống
 
-Danh sách các yêu cầu về phần cứng và phần mềm để chạy được dự án này.
-
-- Hệ điều hành: Windows/Linux/macOS
-- Phiên bản Python: >= 3.8
-- Các thư viện phụ thuộc: liệt kê các thư viện cần thiết
+- **Hệ điều hành**: Windows/Linux/macOS
+- **Phiên bản Python**: >= 3.8
+- **Các thư viện phụ thuộc**: Liệt kê trong file `requirements.txt`
 
 ## Cài đặt
 
-Hướng dẫn cài đặt dự án này trên máy tính của người dùng.
+Để cài đặt dự án này, bạn cần thực hiện các bước sau:
 
-```sh
-# Clone repository
-git clone https://github.com/username/repository-name.git
-cd repository-name
+1. Clone repository:
+    ```sh
+    git clone https://github.com/thredeisacoder/Sec_scripts.git
+    cd Sec_scripts
+    ```
 
-# Tạo và kích hoạt virtual environment
-python -m venv venv
-source venv/bin/activate  # Trên Windows sử dụng `venv\Scripts\activate`
+2. Tạo và kích hoạt virtual environment:
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # Trên Windows sử dụng `venv\Scripts\activate`
+    ```
 
-# Cài đặt các thư viện phụ thuộc
-pip install -r requirements.txt
+3. Cài đặt các thư viện phụ thuộc:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## Hướng dẫn sử dụng
+
+Chi tiết về cách sử dụng từng công cụ và script được cung cấp trong thư mục tương ứng.
+
+## Ví dụ
+
+Ví dụ về cách chạy và sử dụng các script được cung cấp trong thư mục `examples`.
+
+## Đóng góp
+
+Nếu bạn muốn đóng góp vào dự án này, vui lòng fork repository, tạo branch mới và gửi pull request. Mọi đóng góp đều được hoan nghênh!
+
+## Giấy phép
+
+Dự án này được cấp phép dưới giấy phép MIT. Xem chi tiết trong file `LICENSE`.
+
+## Liên hệ
+
+Nếu có bất kỳ câu hỏi hoặc đề xuất, vui lòng liên hệ qua email: [thredeisacoder@example.com](mailto:thredeisacoder@example.com).
+
