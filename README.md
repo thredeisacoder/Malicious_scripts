@@ -1,4 +1,4 @@
-# Sec_scripts
+# Malicious_scripts
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ## Mô tả
 
@@ -35,8 +35,8 @@ Dự án này bao gồm các công cụ và mã nguồn để thử nghiệm cá
 
 1. Clone repository:
     ```sh
-    git clone https://github.com/thredeisacoder/Sec_scripts.git
-    cd Sec_scripts
+    git clone https://github.com/thredeisacoder/Malicious_scripts.git
+    cd Malicious_scripts
     ```
 
 2. Tạo và kích hoạt virtual environment:
