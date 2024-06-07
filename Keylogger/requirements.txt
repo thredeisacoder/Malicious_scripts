@@ -1,0 +1,1 @@
+pynput requests python-telegram-bot
